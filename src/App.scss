@@ -1,0 +1,117 @@
+@import './scss/font';
+@import './scss/variable';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif, 
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  background-color: $background;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utilities */
+.container
+{
+  max-width: 1240px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.bg 
+{
+  &-primary {background: $primary_color;}
+  &-secondary {background: $secondary_color;}
+}
+
+.h {
+  &-1 {max-height: 10vh;}
+  &-2 {max-height: 20vh;}
+  &-3 {max-height: 30vh;}
+  &-4 {max-height: 40vh;}
+  &-5 {max-height: 50vh;}
+  &-6 {max-height: 60vh;}
+  &-7 {max-height: 70vh;}
+  &-8 {max-height: 80vh;}
+}
+
+/* Flex Utilities */
+.flex {
+  display: flex;
+  align-items: center;
+
+  &-col {flex-direction: column;}
+  .flex-1 {flex:1;}
+  .flex-2 {flex:2;}
+  .flex-3 {flex:3;}
+}
+
+
+/* Font Utilities */
+
+.text
+{
+  &-normal {font-weight: 400;}
+  &-w-4 {font-weight: 400;}
+  &-bold {font-weight: 700;}
+  &-w-7 {font-weight: 700;}
+
+  &-size {
+    &-1 {font-size: 1.25rem;}
+    &-2 {font-size: 1.5rem;}
+    &-3 {font-size: 1.75rem;}
+    &-4 {font-size: 2rem;}
+    &-5 {font-size: 2.25rem;}
+
+    &-heading {font-size: 2.25rem;}
+    &-subheading {font-size: 1.5rem;}
+  }
+}
+
+
+// Card
+.card
+{
+
+}
+
+/* Pages */
+
+
+.header > .icon
+{
+  font-size: 2.2rem;
+  // line-height: 3.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: -0.02rem;
+
+  text-shadow: -1px 0 $glow_pink,
+                0 1px $glow_pink,
+                1px 0 $glow_pink,
+                0 -1px $glow_pink;
+}
+
+
