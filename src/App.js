@@ -1,24 +1,26 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./output.css";
-import Home from "./components/home";
+import Bio from "./components/bio";
+import Education from "./components/education";
+import Navbar from "./components/navbar";
+import Tools from "./components/tools";
 
 const App = () => {
   return (
-    <Router>
-      <div className="container">
-        <header className="header flex">
-          <div className="icon flex-1 text-bold">NKIKK</div>
-          <div className="flex-3"></div>
-          {/* <Navbar className="flex-3" /> */}
-        </header>
-        <div className="content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </div>
+    <div className="container flex flex-col items-center py-4 mx-auto">
+      <header className="flex flex-row max-w-screen-lg w-full justify-between">
+        <span className="text-4xl font-bold justify-between">NKIKK</span>
+        <Navbar className=""></Navbar>
+      </header>
+      <div className="content max-w-screen-lg w-full">
+        <Bio />
+        <Education />
+        <Tools />
+        <section id="skills"></section>
+        <section id="works"></section>
       </div>
-    </Router>
+      <footer></footer>
+    </div>
   );
 };
 

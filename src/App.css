@@ -6,10 +6,18 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-/* :root
+:root
 {
   --background: #fffdf5;
   --primary_color: #c1e6ff;
   --secondary_color: #d4dba9;
   --glow_pink: #ffebf9;
-} */
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.bg-secondary {
+  background: var(--secondary_color);
+}
