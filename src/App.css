@@ -1,0 +1,15 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* :root
+{
+  --background: #fffdf5;
+  --primary_color: #c1e6ff;
+  --secondary_color: #d4dba9;
+  --glow_pink: #ffebf9;
+} */
