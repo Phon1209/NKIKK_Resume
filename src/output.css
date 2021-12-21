@@ -635,7 +635,6 @@ body {
 }
 
 .image-prev:hover div{
-  /* background: linear-gradient(270deg, rgba(118, 118, 118, 0.59) 0%, rgba(196, 196, 196, 0) 109.17%); */
   background: radial-gradient(96.33% 47.45% at 96.33% 50.14%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
@@ -644,7 +643,6 @@ body {
 }
 
 .image-next:hover div {
-  /* background: linear-gradient(270deg, rgba(118, 118, 118, 0.59) 0%, rgba(196, 196, 196, 0) 109.17%); */
   background: radial-gradient(96.33% 47.45% at 96.33% 50.14%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
   -webkit-filter: blur(4px);
           filter: blur(4px);
