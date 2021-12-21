@@ -7,6 +7,7 @@ const Tools = () => {
       <div>
         <Toolsvg />
       </div>
+      
     </section>
   );
 };

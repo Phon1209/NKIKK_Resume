@@ -4,6 +4,8 @@ import Bio from "./components/bio";
 import Education from "./components/education";
 import Navbar from "./components/navbar";
 import Tools from "./components/tools";
+import Skills from "./components/skills";
+import Works from "./components/works";
 
 const App = () => {
   return (
@@ -16,7 +18,8 @@ const App = () => {
         <Bio />
         <Education />
         <Tools />
-        <section id="skills"></section>
+        <Skills/>
+        <Works/>
         <section id="works"></section>
       </div>
       <footer></footer>
