@@ -21,3 +21,29 @@ body {
 .bg-secondary {
   background: var(--secondary_color);
 }
+
+.image-next,
+.image-prev {
+  position: relative;
+  width: 10%;
+  height: 100%;
+}
+
+.image-prev:hover div{
+  background: radial-gradient(96.33% 47.45% at 96.33% 50.14%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);  
+  transform: rotate(-180deg);
+  filter: blur(4px);
+}
+
+.image-next:hover div {
+  background: radial-gradient(96.33% 47.45% at 96.33% 50.14%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);  
+  filter: blur(4px);
+}
+
+.image-next ion-icon,
+.image-prev ion-icon{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}

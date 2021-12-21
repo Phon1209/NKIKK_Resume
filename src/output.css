@@ -422,27 +422,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-*, ::before, ::after {
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-blur: var(--tw-empty,/*!*/ /*!*/);
-  --tw-brightness: var(--tw-empty,/*!*/ /*!*/);
-  --tw-contrast: var(--tw-empty,/*!*/ /*!*/);
-  --tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
-  --tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
-  --tw-invert: var(--tw-empty,/*!*/ /*!*/);
-  --tw-saturate: var(--tw-empty,/*!*/ /*!*/);
-  --tw-sepia: var(--tw-empty,/*!*/ /*!*/);
-  --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
-  --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .container {
   width: 100%;
 }
@@ -481,6 +460,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .m-8 {
   margin: 2rem;
 }
@@ -513,12 +500,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-auto {
   height: auto;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-full {
@@ -531,11 +518,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-screen-lg {
   max-width: 1024px;
-}
-
-.transform {
-  -webkit-transform: var(--tw-transform);
-          transform: var(--tw-transform);
 }
 
 .flex-row {
@@ -563,27 +545,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
 }
 
-.bg-gradient-to-l {
-  background-image: linear-gradient(to left, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.from-transparent {
-  --tw-gradient-from: transparent;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
-}
-
-.to-black {
-  --tw-gradient-to: #000;
-}
-
-.to-\[\#767676\] {
-  --tw-gradient-to: #767676;
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -594,10 +555,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
 }
 
 .py-4 {
@@ -646,15 +603,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0;
 }
 
-.blur {
-  --tw-blur: blur(8px);
-  -webkit-filter: var(--tw-filter);
-          filter: var(--tw-filter);
-}
-
-.filter {
-  -webkit-filter: var(--tw-filter);
-          filter: var(--tw-filter);
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
@@ -673,6 +625,38 @@ body {
 
 .bg-secondary {
   background: var(--secondary_color);
+}
+
+.image-next,
+.image-prev {
+  position: relative;
+  width: 10%;
+  height: 100%;
+}
+
+.image-prev:hover div{
+  /* background: linear-gradient(270deg, rgba(118, 118, 118, 0.59) 0%, rgba(196, 196, 196, 0) 109.17%); */
+  background: radial-gradient(96.33% 47.45% at 96.33% 50.14%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+.image-next:hover div {
+  /* background: linear-gradient(270deg, rgba(118, 118, 118, 0.59) 0%, rgba(196, 196, 196, 0) 109.17%); */
+  background: radial-gradient(96.33% 47.45% at 96.33% 50.14%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+.image-next ion-icon,
+.image-prev ion-icon{
+  position: absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
 }
 
 .hover\:opacity-100:hover {
