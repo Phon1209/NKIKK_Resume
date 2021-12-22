@@ -21,13 +21,8 @@ const ImageSlider = ({ imageID }) => {
     <div
       style={{
         backgroundImage: `url(${images[currImg].img})`,
-        backgroundSize: "contain",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center center",
-        height: "600px",
-        width: "800px",
       }}
-      className="relative flex justify-between transition-opacity"
+      className="image-slider"
     >
       <div
         className="image-prev opacity-0 hover:opacity-100"

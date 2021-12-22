@@ -554,10 +554,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 80%;
 }
 
-.w-11\/12 {
-  width: 91.666667%;
-}
-
 .max-w-screen-lg {
   max-width: 1024px;
 }
@@ -681,12 +677,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0;
 }
 
-.transition-opacity {
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 :root {
@@ -763,6 +753,20 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 1em;
+}
+
+.image-slider {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  background-size: "contain";
+  background-repeat: "no-repeat";
+  background-position: "center center";
+  height: "600px";
+  width: "800px";
 }
 
 .hover\:opacity-100:hover {
