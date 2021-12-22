@@ -7,54 +7,49 @@ import { ReactComponent as Bgleftsvg } from "./svgs/bg_tool_left.svg";
 
 const Tools = () =>{
   return (
-    <section className="relative w-full"
+    <section className="relative w-full border-8"
       style={{
-      // height: "400px"
+      overflow:"hidden"
     }}>
       
       <Bgleftsvg style={{
         position: "absolute",
-        left:"-25%",
-        top: "50%",
+        left:"-100",
+        top: "70%",
         transform: "translate(0,-50%)",
         height:"100%",
         zIndex: "-1"
       }} />
       <Bgrightsvg style={{
         position: "absolute",
-        right:"-30%",
+        right:"-400",
         top: "50%",
         transform: "translate(0,-50%)",
         height:"100%",
         zIndex: "-1"
       }}/>
-      <div className="p-6">
+      <div className="container py-4 mx-auto flex flex-col">
         
         <span className="text-3xl font-bold text-center block mx-auto my-6">
                 Tools
             </span>
         
-        <div className="flex flex-col items-center justify-between p-6 md:flex-row">
+        <div className="w-4/5 mx-auto flex flex-col  items-center justify-between p-6 md:flex-row ">
 
           
-          <div className="flex flex-1 flex-col items-center m-5">
-            <div className="flex flex-row items-center justify-items-center"
-              style={{
-              height: "100px"
-            }}>
-            <Rstudiosvg/>
-
-            </div>
+          <div className="item-tool">
+            <div className="icon-item-tool"><Rstudiosvg/></div>
             <p>RStudio</p>
           </div>
           
-          <div className="flex flex-1 flex-col items-center m-5">
-            <Figmasvg/>
+          <div className="item-tool"
+          >
+            <div className="icon-item-tool"><Figmasvg/></div>
             <p>Figma</p>
           </div>
           
-          <div className="flex flex-1 flex-col items-center m-5">
-            <Vscodesvg/>
+          <div className="item-tool">
+          <div className="icon-item-tool"><Vscodesvg/></div>
             <p>VS code</p>
           </div>
         </div>

@@ -22,8 +22,8 @@ const App = () => {
       </div>
       
       <Education />
+      <Tools />
       <div className="container">
-        <Tools />
         <Skills/>
         <Works/>
 
