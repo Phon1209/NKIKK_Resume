@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { images } from "./imageSources";
+import { imageSet } from "./imageSources";
 
-const ImageSlider = () => {
+const ImageSlider = ({ imageID }) => {
+  const images = imageSet[imageID];
   const [currImg, setCurrImg] = useState(0);
 
   const changeImage = (event, indexChange) => {
@@ -17,32 +18,30 @@ const ImageSlider = () => {
   };
 
   return (
-    <div>
+    <div
+      style={{
+        backgroundImage: `url(${images[currImg].img})`,
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center center",
+        height: "400px",
+        width: "500px",
+      }}
+      className="relative flex justify-between transition-opacity"
+    >
       <div
-        style={{
-          backgroundImage: `url(${images[currImg].img})`,
-          backgroundSize: "contain",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center center",
-          height: "400px",
-          width: "500px",
-        }}
-        className="relative flex justify-between transition-opacity"
+        className="image-prev opacity-0 hover:opacity-100"
+        onClick={(e) => changeImage(e, -1)}
       >
-        <div
-          className="image-prev opacity-0 hover:opacity-100"
-          onClick={(e) => changeImage(e, -1)}
-        >
-          <div className="w-full top-0 left-0 h-full"></div>
-          <ion-icon name="arrow-back-outline"></ion-icon>
-        </div>
-        <div
-          className="image-next opacity-0 hover:opacity-100"
-          onClick={(e) => changeImage(e, 1)}
-        >
-          <div className="w-full top-0 left-0 h-full"></div>
-          <ion-icon name="arrow-forward-outline"></ion-icon>
-        </div>
+        <div className="w-full top-0 left-0 h-full"></div>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </div>
+      <div
+        className="image-next opacity-0 hover:opacity-100"
+        onClick={(e) => changeImage(e, 1)}
+      >
+        <div className="w-full top-0 left-0 h-full"></div>
+        <ion-icon name="arrow-forward-outline"></ion-icon>
       </div>
     </div>
   );
