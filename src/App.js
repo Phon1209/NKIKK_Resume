@@ -6,6 +6,7 @@ import Navbar from "./components/navbar";
 import Tools from "./components/tools";
 import Skills from "./components/skills";
 import Works from "./components/works";
+import Contact from "./components/contact"
 
 const App = () => {
   return (
@@ -20,9 +21,9 @@ const App = () => {
         <Tools />
         <Skills/>
         <Works/>
-        <section id="works"></section>
+        
       </div>
-      <footer></footer>
+      <Contact/>
     </div>
   );
 };

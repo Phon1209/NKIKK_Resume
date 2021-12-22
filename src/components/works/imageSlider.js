@@ -24,8 +24,8 @@ const ImageSlider = ({ imageID }) => {
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
-        height: "400px",
-        width: "500px",
+        height: "600px",
+        width: "800px",
       }}
       className="relative flex justify-between transition-opacity"
     >
