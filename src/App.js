@@ -10,19 +10,25 @@ import Contact from "./components/contact"
 
 const App = () => {
   return (
-    <div className="container flex flex-col items-center py-4 mx-auto">
-      <header className="flex flex-row max-w-screen-lg w-full justify-between">
+    <div className=" flex flex-col items-center py-4 mx-auto">
+      <div className="container">
+        <header className="flex flex-row max-w-screen-lg w-full justify-between">
         <span className="text-4xl font-bold justify-between">NKIKK</span>
         <Navbar className=""></Navbar>
-      </header>
-      <div className="content max-w-screen-lg w-full">
-        <Bio />
-        <Education />
+        </header>
+        <div className="content max-w-screen-lg w-full">
+          <Bio />
+        </div>
+      </div>
+      
+      <Education />
+      <div className="container">
         <Tools />
         <Skills/>
         <Works/>
-        
+
       </div>
+        
       <Contact/>
     </div>
   );
