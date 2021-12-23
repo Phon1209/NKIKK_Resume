@@ -5,7 +5,7 @@ const Skills = () => {
     return (
         <section className='flex flex-col md:flex-row'>
         <Skillsvg/>
-         <div className="p-5">
+         <div className="py-4">
               <span className="text-3xl font-bold">Skills</span>
               <div className="p-5">
                 <li>Designing websites</li>

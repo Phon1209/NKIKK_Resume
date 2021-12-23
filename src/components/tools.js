@@ -7,7 +7,7 @@ import { ReactComponent as Bgleftsvg } from "./svgs/bg_tool_left.svg";
 
 const Tools = () =>{
   return (
-    <section className="relative w-full border-8"
+    <section className="relative w-full"
       style={{
       overflow:"hidden"
     }}>
@@ -34,7 +34,7 @@ const Tools = () =>{
                 Tools
             </span>
         
-        <div className="w-4/5 mx-auto flex flex-col  items-center justify-between p-6 md:flex-row ">
+        <div className="w-full max-w-4xl mx-auto flex flex-col  items-center justify-between  md:flex-row ">
 
           
           <div className="item-tool">
