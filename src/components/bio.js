@@ -1,5 +1,6 @@
 import React from "react";
 import "./../output.css";
+import Nkikk from "./../assets/images/nkikk.png";
 
 const Bio = () => {
   return (
@@ -10,7 +11,7 @@ const Bio = () => {
           I'm UI/UX designer based in Thailand. I’m focusing on creating user-friendly interface through design.
         </p>
       </div>
-      <img src="" alt="" className="w-1/2" />
+      <img src={Nkikk} alt="" className="w-1/2" />
     </section>
   );
 };

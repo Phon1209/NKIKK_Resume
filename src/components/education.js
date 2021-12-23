@@ -7,19 +7,20 @@ import Edupng from "./../assets/images/edu.png";
 
 const Education = () => {
   return (
-    <section className="w-full relative"
+    <section className="relative w-full "
       style={{
       backgroundColor: "#A5DBFF"
-    }}>
+      }}>
+
       {/* <Linesvg style={{
           postition: "absolute",
-        // right: "-100",
+        left: "-50%",
         // top: "50%",
         // transform: "translate(-50%,-50%)",
         zIndex: "-1",
       }} /> */}
+      <div className=" container py-4 mx-auto max-w-5xl flex flex-col md:flex-row md:justify-between items-center  ">
       
-      <div className="container py-4 mx-auto max-w-5xl flex flex-col md:flex-row p-3 md:justify-between items-center my-12 ">
       <div className="h-auto">
         {/* <Edusvg/> */}
           <img src={Edupng} alt=""
