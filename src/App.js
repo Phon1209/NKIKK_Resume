@@ -6,12 +6,21 @@ import Navbar from "./components/navbar";
 import Tools from "./components/tools";
 import Skills from "./components/skills";
 import Works from "./components/works";
-import Contact from "./components/contact"
+import Contact from "./components/contact";
+import { ReactComponent as Bgsvg } from "./components/svgs/bg_bio.svg";
 
 const App = () => {
   return (
-    <div className=" flex flex-col items-center py-4 mx-auto">
-      <div className="container">
+    <div className=" flex flex-col items-center py-4 mx-auto max-w-7xl">
+      <div className="container flex flex-col items-center py-4 mx-auto relative">
+        <Bgsvg
+          style={{
+            position: "absolute",
+            zIndex: "-1",
+            left: "-10",
+            top: "0",
+            width:"20em"
+          }}/>
         <header className="flex flex-row max-w-screen-lg w-full justify-between">
         <span className="text-4xl font-bold justify-between">NKIKK</span>
         <Navbar className=""></Navbar>

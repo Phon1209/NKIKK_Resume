@@ -78,9 +78,9 @@ body {
 
 .image-slider {
   @apply relative flex justify-between transition-opacity;
-  background-size: "contain";
-  background-repeat: "no-repeat";
-  background-position: "center center";
-  height: "600px";
-  width: "800px";
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 600px;
+  width: 800px;
 }

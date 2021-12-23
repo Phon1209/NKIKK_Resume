@@ -10,9 +10,9 @@ const Works = () => {
       </span>
       {workDetail.map((element, index) => {
         return (
-          <div key={index} className="mx-auto md:flex md:items-center">
-            <ImageSlider imageID={index} className="md:flex-1" />
-            <div className="m-6 p-4 md:flex-1">
+          <div key={index} className="mx-auto flex flex-col lg:flex-row items-center">
+            <ImageSlider imageID={index} className="lg:flex-1" />
+            <div className="m-6 p-4 lg:flex-1">
               <span className="text-3xl font-bold text-center">
                 {element.title}
               </span>
