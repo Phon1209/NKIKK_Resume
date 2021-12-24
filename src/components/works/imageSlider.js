@@ -18,27 +18,40 @@ const ImageSlider = ({ imageID }) => {
   };
 
   return (
-    <div
-      style={{
-        backgroundImage: `url(${images[currImg].img})`,
-      }}
-      className="image-slider"
-    >
-      <div
-        className="image-prev opacity-0 hover:opacity-100"
-        onClick={(e) => changeImage(e, -1)}
-      >
-        <div className="w-full top-0 left-0 h-full"></div>
-        <ion-icon name="arrow-back-outline"></ion-icon>
+    <div className="image-slider">
+
+    
+      <div className="hoverLeft">
+        <div
+          className="image-prev opacity-0 hover:opacity-100"
+          onClick={(e) => changeImage(e, -1)}
+        >
+          <div className="w-full top-0 left-0 h-full"></div>
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </div>
+
       </div>
-      <div
-        className="image-next opacity-0 hover:opacity-100"
-        onClick={(e) => changeImage(e, 1)}
-      >
-        <div className="w-full top-0 left-0 h-full"></div>
-        <ion-icon name="arrow-forward-outline"></ion-icon>
+      <div className="hoverRight">
+        <div
+          className="image-next opacity-0 hover:opacity-100"
+          onClick={(e) => changeImage(e, 1)}
+        >
+          <div className="w-full top-0 left-0 h-full"></div>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
       </div>
+      <img
+      src={`${images[currImg].img}`}
+      width="800"
+      height="600"
+        className=""
+        style={{
+          height:" auto",
+          width: "100%",
+        }}
+    />
     </div>
+     
   );
 };
 

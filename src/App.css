@@ -23,7 +23,7 @@ body {
 .image-next,
 .image-prev {
   position: relative;
-  width: 10%;
+  width: 100%;
   height: 100%;
 }
 
@@ -35,6 +35,8 @@ body {
   );
   transform: rotate(-180deg);
   filter: blur(4px);
+  z-index: 10;
+  cursor: pointer;
 }
 
 .image-next:hover div {
@@ -44,6 +46,8 @@ body {
     rgba(0, 0, 0, 0) 100%
   );
   filter: blur(4px);
+  z-index: 10;
+  cursor: pointer;
 }
 
 .image-next ion-icon,
@@ -77,10 +81,30 @@ body {
 }
 
 .image-slider {
-  @apply relative flex justify-between transition-opacity;
-  background-size: contain;
+  /* @apply relative flex justify-between transition-opacity; */
+  /* background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
-  height: 600px;
-  width: 800px;
+  background-position: center center; */
+  /* height: auto;
+  width: 100%; */
+  position: relative;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 60%;
+}
+.hoverLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+}
+.hoverRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%;
+  height: 100%;
 }

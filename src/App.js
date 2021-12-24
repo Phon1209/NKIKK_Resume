@@ -8,21 +8,26 @@ import Skills from "./components/skills";
 import Works from "./components/works";
 import Contact from "./components/contact";
 import { ReactComponent as Bgsvg } from "./components/svgs/bg_bio.svg";
+import Nkikk_logo from "./assets/images/nkikk_logo.png";
 
 const App = () => {
   return (
-    <div className=" flex flex-col items-center py-4 mx-auto max-w-7xl">
-      <div className="container flex flex-col items-center py-4 mx-auto relative">
-        <Bgsvg
+    <div className=" flex flex-col items-center  mx-auto max-w-7xl">
+      <div className="container flex flex-col items-center  mx-auto relative">
+        {/* <Bgsvg
           style={{
             position: "absolute",
             zIndex: "-1",
-            left: "-10",
+            left: "0",
             top: "0",
-            width:"20em"
+            width: "40vh",
+            height:"50vh"
+          }}/> */}
+        <header className="flex flex-row max-w-screen-lg w-full justify-between p-4">
+          <img src={Nkikk_logo} alt=""
+            style={{
+            width: "100px"
           }}/>
-        <header className="flex flex-row max-w-screen-lg w-full justify-between">
-        <span className="text-4xl font-bold justify-between">NKIKK</span>
         <Navbar className=""></Navbar>
         </header>
         <div className="content max-w-screen-lg w-full">
