@@ -12,7 +12,7 @@ import Nkikk_logo from "./assets/images/nkikk_logo.png";
 
 const App = () => {
   return (
-    <div className=" flex flex-col items-center  mx-auto max-w-7xl">
+    <div className=" flex flex-col items-center  mx-auto max-w-7xl w-full">
       <div className="container flex flex-col items-center  mx-auto relative">
         {/* <Bgsvg
           style={{

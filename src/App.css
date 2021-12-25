@@ -81,23 +81,11 @@ body {
 }
 
 .image-slider {
-  /* @apply relative flex justify-between transition-opacity; */
-  /* background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center; */
-  /* height: auto;
-  width: 100%; */
-  position: relative;
-  /* height: 100vh; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @apply relative flex justify-center items-center;
   flex: 60%;
 }
 .hoverLeft {
-  position: absolute;
-  top: 0;
-  left: 0;
+  @apply absolute top-0 left-0;
   width: 10%;
   height: 100%;
 }

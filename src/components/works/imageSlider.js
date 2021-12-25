@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import { imageSet } from "./imageSources";
 
 const ImageSlider = ({ imageID }) => {
@@ -8,19 +9,18 @@ const ImageSlider = ({ imageID }) => {
   const changeImage = (event, indexChange) => {
     let targetIndex = (currImg + indexChange) % images.length;
     if (targetIndex < 0) targetIndex += images.length;
+    const panel = event.target.parentNode.parentNode.parentNode;
     setTimeout(() => {
-      event.target.parentNode.parentNode.classList.add("opacity-0");
+      panel.classList.add("opacity-0");
       setTimeout(() => setCurrImg(targetIndex), 150);
       setTimeout(() => {
-        event.target.parentNode.parentNode.classList.remove("opacity-0");
+        panel.classList.remove("opacity-0");
       }, 150);
     }, 0);
   };
 
   return (
-    <div className="image-slider">
-
-    
+    <div className="image-slider transition-opacity">
       <div className="hoverLeft">
         <div
           className="image-prev opacity-0 hover:opacity-100"
@@ -44,9 +44,8 @@ const ImageSlider = ({ imageID }) => {
       src={`${images[currImg].img}`}
       width="800"
       height="600"
-        className=""
         style={{
-          height:" auto",
+          height:"auto",
           width: "100%",
         }}
     />
@@ -54,5 +53,9 @@ const ImageSlider = ({ imageID }) => {
      
   );
 };
+
+ImageSlider.propTypes = {
+  imageID: PropTypes.number,
+}
 
 export default ImageSlider;
