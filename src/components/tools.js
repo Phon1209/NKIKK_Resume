@@ -22,7 +22,7 @@ const Tools = () => {
   ];
 
   return (
-    <section
+    <section id="tool"
       className="relative w-full"
       style={{
         overflow: "hidden",

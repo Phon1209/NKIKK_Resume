@@ -5,28 +5,28 @@ import { ReactComponent as  Websitesvg} from "./svgs/website.svg"
 
 const contact = () =>{
     return (
-        <footer className='bg-pink-400 flex flex-col p-4 w-full'>
-            <span className="text-3xl font-bold text-center block mx-auto my-6">
+        <footer id="contact" className='bg-pink-400 flex flex-col p-4 w-full'>
+            <span className="text-3xl font-bold text-center block mx-auto my-6 text-white">
                 Contact
             </span>
             <div className="flex flex-col md:flex-row space items-center justify-between">
                 <div className="flex flex-1 flex-col items-center">
                     {/* svg */}
-                    <Mailsvg/>
+                    <Mailsvg style={{width: "4rem" }}/>
                     {/* detail */}
-                    <p>nantitakikk.c@gmail.com</p>
+                    <p className='text-white'>nantitakik.c@gmail.com</p>
                 </div>
                 <div className="flex flex-1 flex-col items-center">
                     {/* svg */}
-                    <Linkedinsvg/>
+                    <Linkedinsvg style={{width: "4rem" }}/>
                     {/* detail */}
-                    <p>linkedin.com/in/nantitakik</p>
+                    <p className='text-white'>linkedin.com/in/nantitakik</p>
                 </div>
                 <div className="flex flex-1 flex-col items-center">
                     {/* svg */}
-                    <Websitesvg/>
+                    <Websitesvg style={{width: "4rem" }}/>
                     {/* detail */}
-                    <p>nkikk.com</p>
+                    <p className='text-white'>behance.net/nantitakik</p>
                 </div>
             </div>
         </footer>

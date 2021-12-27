@@ -6,14 +6,14 @@ import Edupng from "./../assets/images/edu.png";
 
 const Education = () => {
   return (
-    <section className="relative w-full "
+    <section id="education" className="relative w-full "
       style={{
         backgroundColor: "#A5DBFF",
         overflow:"hidden"
       }}>
 
       <div className="container py-4 mx-auto max-w-5xl flex flex-col md:flex-row md:justify-between items-center  ">
-      <Linesvg className="absolute left-14 md:static md:mx-10 block z-10" />
+      <Linesvg className="absolute left-14 md:static md:mx-10 block z-1" />
       
       <div className="h-auto">
         {/* <Edusvg/> */}

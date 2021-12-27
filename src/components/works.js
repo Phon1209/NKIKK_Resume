@@ -4,7 +4,7 @@ import workDetail from "./works/workDetails.json";
 
 const Works = () => {
   return (
-    <section className="p-6 max-w-7xl w-full">
+    <section id="work" className="p-6 max-w-7xl w-full">
       <span className="text-3xl font-bold text-center block mx-auto my-6">
         My works
       </span>

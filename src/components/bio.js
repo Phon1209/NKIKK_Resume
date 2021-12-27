@@ -5,7 +5,7 @@ import Nkikk from "./../assets/images/nkikk.png";
 
 const Bio = () => {
   return (
-    <section className="flex flex-col md:flex-row p-4 items-center mx-auto w-full"
+    <section id="bio" className="flex flex-col md:flex-row p-4 items-center mx-auto w-full mt-20"
       style={{
         alignItem: "center",
         justifyContent: "center"
