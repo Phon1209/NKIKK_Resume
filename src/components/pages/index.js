@@ -10,6 +10,7 @@ import Contact from './../contact'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const [isMobile, setIsMobile] = useState(false);
     
     const toggle = () => {
         setIsOpen(!isOpen)
@@ -18,8 +19,8 @@ const Home = () => {
 
     return (
         <>
-            <Sidebar isOpen={isOpen} toggle={ toggle}/>
-            <Navbar toggle={toggle} />
+            <Sidebar isOpen={isOpen} isMobile={isMobile} toggle={toggle}/>
+            <Navbar toggle={toggle} isMobile={isMobile} setMobile={setIsMobile}  />
             <Bio />
             <Education />
             <Tools />

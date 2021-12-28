@@ -42,6 +42,7 @@ const ImageSlider = ({ imageID }) => {
       </div>
       <img
       src={`${images[currImg].img}`}
+      alt={`Set ID: ${imageID}`}
       width="800"
       height="600"
         style={{

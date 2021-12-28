@@ -3,7 +3,7 @@ import {Nav, NavbarContainer, NavLogo,MobileIcon,NavMenu,NavItem,NavLinks} from 
 import {FaBars} from 'react-icons/fa'
 import { animateScroll as scroll} from 'react-scroll'
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle,isMobile,setMobile }) => {
     
     const [scrollNav,setScrollNav]=useState(false)
 
@@ -17,6 +17,10 @@ const Navbar = ({ toggle }) => {
 
     useEffect(() => {
         window.addEventListener('scroll',changeNav)
+        window.addEventListener('resize', ()=>{
+            setMobile(window.innerWidth <= 768);
+        });
+        // eslint-disable-next-line
     }, [])
     
     const toggleHome = () => {
@@ -28,9 +32,9 @@ const Navbar = ({ toggle }) => {
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
                     <NavLogo to='/' onClick={toggleHome}>NKIKK</NavLogo>
-                    <MobileIcon onClick={toggle}>
+                    {isMobile && <MobileIcon onClick={toggle}>
                         <FaBars/>
-                    </MobileIcon>
+                    </MobileIcon>}
 
                     <NavMenu>
                         <NavItem>
