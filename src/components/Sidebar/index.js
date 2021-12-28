@@ -9,13 +9,13 @@ const Sidebar = ({isOpen,toggle}) => {
             </Icon>
             <SidebarWapper>
                 <SidebarMenu>
-                    <SidebarLink to="bio" onClick={toggle}>
+                    <SidebarLink to="bio" onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80} >
                         Home
                     </SidebarLink>
-                    <SidebarLink to="work" onClick={toggle}>
+                    <SidebarLink to="work" onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80} >
                         Works
                     </SidebarLink>
-                    <SidebarLink to="contact" onClick={toggle}>
+                    <SidebarLink to="contact" onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80} >
                         Contact
                     </SidebarLink>
                 </SidebarMenu>
