@@ -1,9 +1,15 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { SidebarContainer,Icon,CloseIcon,SidebarLink,SidebarWapper,SidebarMenu } from './SidebarElement'
 
-const Sidebar = ({isOpen,toggle}) => {
+const Sidebar = ({isOpen,isMobile,toggle}) => {
+
+    useEffect(() => {
+        if(!isMobile && isOpen) toggle();
+        // eslint-disable-next-line
+    },[isMobile]);
+
     return (
-        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <SidebarContainer isOpen={isOpen && isMobile} onClick={toggle}>
             <Icon onClick={toggle}>
                 <CloseIcon/>
             </Icon>
