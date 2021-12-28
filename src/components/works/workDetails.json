@@ -1,12 +1,12 @@
 [
   {
     "title": "Fortune168 Project",
-    "timeframe": "Nov 2020 - Dec 2020",
+    "timeframe": "Oct 2021 - Nov 2021",
     "desc": "A matching platform for fortune tellers and those who want to have a fortune-telling session."
   },
   {
     "title": "Exigent Project",
-    "timeframe": "Nov 2020 - Dec 2020",
+    "timeframe": "Apr 2021 - May 2021",
     "desc": "Remote alarm clock with STM32 board"
   }
-] 
+]
